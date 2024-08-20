@@ -1,0 +1,13 @@
+Job Slayer
+1 ) phele ik samne job ke filters aajaenge
+    jis ma jobs or location wagaira dekskte
+2 ) Registration next auth lagenge google github or custom email
+    jis ma profile pic hu name ,email,nmber,address , small description , your skills , updated password or email
+3 ) Login jo prisma save se lega
+4 )  navbar :
+     Messanger
+     Notification
+     Login Button
+     Profile
+     Home Post
+5 ) Profile se Post ka option
