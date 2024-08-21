@@ -1,28 +1,16 @@
-export default function DashboardLayout({
-  children, // will be a page or nested layout
-}: {
-  children: React.ReactNode
-}) {
+import React from "react";
+import Navbar from './Navbar/page'
+
+export default function Layout({ children ,}: { children: React.ReactNode }) {
+  console.log("Layout rendered"); // Debug message
+
   return (
-    <section>
-      {/* Include shared UI here e.g. a header or sidebar */}
-      <nav></nav>
- 
+    <>
+      {/* <div className=" text-black flex flex-col w-screen text-center"> */}
+<Navbar/>
       {children}
-    </section>
-  )
+      {/* <h1 className=" text-black">lkdsjndsm</h1> */}
+      {/* </div> */}
+    </>
+  );
 }
-
-
-// import React from 'react'
-
-// const Layout = ({children}) => {
-//   return (
-//     <div>
-//       asasdad
-//       {children}
-//     </div>
-//   )
-// }
-
-// export default Layout

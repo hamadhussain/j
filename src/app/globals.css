@@ -67,3 +67,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+.logo {
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  background-image: linear-gradient(to right, #5fa7ff, #ea7bfe);
+  background-clip: text;
+  color: transparent;
+}
+.nav:hover p {
+  display: block;
+}

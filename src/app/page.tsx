@@ -103,59 +103,11 @@
 // // //     </>
 // // //   );
 // // // }
-
-// "use client";
-
-// import { useSession, signIn, signOut } from "next-auth/react";
-
-// export default function Component() {
-//   const { data: session } = useSession();
-//   if (session) {
-//     return (
-//       <>
-//         Signed in as {session.user.email} <br />
-//         <button onClick={() => signOut()}>Sign out</button>
-//       </>
-//     );
-//   }
-//   return (
-//     <>
-//       Not signed in <br />
-//       <button onClick={() => signIn()}>Sign in</button>
-//     </>
-//   );
-// }
-
-"use client";
-
-import { useSession, signIn, signOut } from "next-auth/react";
-import { Session } from "next-auth";
-
-// Define a type for the session object
-interface MySession extends Session {
-  user: {
-    email: string;
-    // Add other properties if needed
-  };
-}
+import Client from './Client/page'
 
 export default function Component() {
-  // Use the typed session data
-  const { data: session } = useSession<MySession>();
-
-  if (session) {
-    return (
-      <>
-        Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()}>Sign out</button>
-      </>
-    );
-  }
-  
   return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Sign in</button>
+    <><Client/>
     </>
   );
 }

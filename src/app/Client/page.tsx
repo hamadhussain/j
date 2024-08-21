@@ -1,13 +1,13 @@
-import React from 'react'
-// import Layout from './layout'
+import React from "react";
+// import Layoutt from "./layout";
 const Page = () => {
-  return (
-    <div>
-    {/* // <Layout> */}
-      hello
-    {/* </Layout> */}
-    </div>
-  )
-}
+  console.log("Page rendered"); // Debug message
 
-export default Page
+  return (
+    <div className=" flex flex-col">
+      <p>hello</p>
+    </div>
+  );
+};
+
+export default Page;
